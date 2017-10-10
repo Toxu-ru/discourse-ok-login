@@ -1,14 +1,14 @@
-class VkontakteUserInfo < ActiveRecord::Base
+class OdnoklassnikiUserInfo < ActiveRecord::Base
   belongs_to :user
 end
 
 # == Schema Information
 #
-# Table name: vkontakte_user_infos
+# Table name: odnoklassniki_user_infos
 #
 #  id                :integer          not null, primary key
 #  user_id           :integer          not null
-#  vkontakte_user_id :integer          not null
+#  odnoklassniki_user_id :integer          not null
 #  username          :string
 #  first_name        :string
 #  last_name         :string
@@ -21,6 +21,6 @@ end
 #
 # Indexes
 #
-#  index_vkontakte_user_infos_on_vkontakte_user_id  (vkontakte_user_id) UNIQUE
-#  index_vkontakte_user_infos_on_user_id            (user_id) UNIQUE
+#  index_odnoklassniki_user_infos_on_odnoklassniki_user_id  (odnoklassniki_user_id) UNIQUE
+#  index_odnoklassniki_user_infos_on_user_id            (user_id) UNIQUE
 #
