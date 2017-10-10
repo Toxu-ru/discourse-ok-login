@@ -1,6 +1,6 @@
-# Discourse VK.com Plugin
+# Discourse OK.com Plugin
 
-VK.com login for Discourse
+OK.com login for Discourse
 
 **Caution**: there are no tests, use at your own risk!
 
@@ -36,10 +36,10 @@ Just two easy steps. From your main discourse do:
 
 ```
 cd plugins
-git clone https://github.com/stereobooster/discourse-vk-login.git
+git clone https://github.com/Toxu-ru/discourse-ok-login.git
 cd ..
 export RAILS_ENV=production                    # set to productions
-cp discourse-vk-login/db/migrate/* db/migrate/ # copy migrations
+cp discourse-ok-login/db/migrate/* db/migrate/ # copy migrations
 rake db:migrate                                # run migrations
 rake assets:precompile                         # precompile assets
 ```
@@ -48,7 +48,7 @@ rake assets:precompile                         # precompile assets
 
   - Fix share button
   - Fix plugin settings
-  - Do not show button if there are no VK API keys
+  - Do not show button if there are no OK API keys
   - Add tests
 
 ## License
@@ -62,3 +62,6 @@ Examples of code:
   - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
   - https://github.com/auth0/discourse-plugin/blob/master/plugin.rb
   - https://github.com/werweisswas/discourse-plugin-tagger/blob/master/plugin.rb
+  
+ 
+ **ВНИМАНИЕ:** плагин может сломать Discourse! Он только делается, он не испытывался даже на localhoste, все изменения сделаны только в тексте!  
