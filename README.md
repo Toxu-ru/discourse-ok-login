@@ -17,7 +17,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
-          - git https://github.com/stereobooster/discourse-vk-login.git
+          - git https://github.com/Toxu-ru/discourse-ok-login.git
           - cp discourse-vk-login/db/migrate/* db/migrate/
 ```
 
