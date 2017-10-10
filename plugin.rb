@@ -1,19 +1,19 @@
-# name: discourse-vk-login
-# about: Authenticate with discourse with vk.com, see more at: https://vk.com/developers.php?id=-1_37230422&s=1
+# name: discourse-ok-login
+# about: Authenticate with discourse with ok.com, see more at: 
 # version: 0.2.4
-# author: Sam Saffron, stereobooster
-# url: https://github.com/stereobooster/discourse-vk-login
+# author: Sam Saffron, stereobooster, Evg
+# url: https://github.com/stereobooster/discourse-ok-login
 
-enabled_site_setting :vk_client_id
-enabled_site_setting :vk_client_secret
+enabled_site_setting :ok_client_id
+enabled_site_setting :ok_client_secret
 
-gem 'omniauth-vkontakte', '1.3.6'
+gem 'omniauth-odnoklassniki', '1.3.6'
 
 # load the engine
-load File.expand_path('../lib/vk.rb', __FILE__)
+load File.expand_path('../lib/ok.rb', __FILE__)
 
 auth_provider :frame_width => 920,
               :frame_height => 800,
-              :authenticator => Vk::Authenticator.new
+              :authenticator => Ok::Authenticator.new
 
-register_asset "stylesheets/vk_styles.scss"
+register_asset "stylesheets/ok_styles.scss"
