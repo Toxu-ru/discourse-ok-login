@@ -1,5 +1,5 @@
 plugins:
-  vk_client_id:
+  ok_client_id:
     default: ''
-  vk_client_secret:
+  ok_client_secret:
     default: ''
