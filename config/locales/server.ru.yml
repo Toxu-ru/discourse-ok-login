@@ -2,5 +2,5 @@
 
 ru:
   site_settings:
-    vk_client_id: "Client_id, зарегистрированный в http://vk.com/"
-    vk_client_secret: "Client_secret, зарегистрированный http://vk.com/"
+    ok_client_id: "Client_id, зарегистрированный в http://ok.com/"
+    ok_client_secret: "Client_secret, зарегистрированный http://ok.com/"
